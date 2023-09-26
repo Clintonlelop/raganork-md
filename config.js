@@ -41,9 +41,9 @@ module.exports = {
     ANTI_BOT: process.env.ANTI_BOT || 'true',
     ANTISPAM_COUNT: process.env.ANTISPAM_COUNT || '2/2', // msgs/sec
     AUTOUNMUTE_MSG: process.env.AUTOUNMUTE_MSG || '_Group auto unmuted!_\n_(edit AUTOUNMUTE_MSG)_',
-    AUTO_READ_STATUS: convertToBool(process.env.AUTO_READ_STATUS) || false,
+    AUTO_READ_STATUS: convertToBool(process.env.AUTO_READ_STATUS) || true,
     READ_MESSAGES: convertToBool(process.env.READ_MESSAGES) || true,
-    PMB_VAR: convertToBool(process.env.PMB_VAR) || false,
+    PMB_VAR: convertToBool(process.env.PMB_VAR) || true,
     DIS_PM: convertToBool(process.env.DIS_PM) || false,
     REJECT_CALLS: convertToBool(process.env.REJECT_CALLS) || true,
     PMB: process.env.PMB || '_Personal messages not allowed, BLOCKED!_',
@@ -51,17 +51,17 @@ module.exports = {
     SESSION: (process.env.SESSION || process.env.SESSION_ID || '').trim() || '',
     IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f", "deb80cd12ababea1c9b9a8ad6ce3fab2", "78c84c62b32a88e86daf87dd509a657a"],
     RG: process.env.RG || '919074309534-1632403322@g.us,120363116963909366@g.us',
-    BOT_INFO: process.env.BOT_INFO || '个ＣＬＩＮＴＯＮ ＢＯＴ个;ＬＥＬ ＯＰ;0;https://imgur.com/a/CCeVNvV.jpeg;https://chat.whatsapp.com/DvngV7sOrSnBVJk0ZmZcb7',
+    BOT_INFO: process.env.BOT_INFO || '个ＣＬＩＮＴＯＮ ＢＯＴ个;ＬＥＬ ＯＰ;2348160208114;https://imgur.com/a/CCeVNvV.jpeg;https://chat.whatsapp.com/DvngV7sOrSnBVJk0ZmZcb7',
     RBG_KEY: process.env.RBG_KEY || '',
     ALLOWED: process.env.ALLOWED || '234
     NOT_ALLOWED: process.env.ALLOWED || '91,94,212',254
     CHATBOT: process.env.CHATBOT || 'off',
-    HANDLERS: process.env.HANDLERS || '-,'
+    HANDLERS: process.env.HANDLERS || '.'
     STICKER_DATA: process.env.STICKER_DATA || "个ＬＥＬ ＯＰ个®,
     BOT_NAME: process.env.BOT_NAME || '个ＣＬＩＮＴＯＮ ＢＯＴ个',
     AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? '个ＣＬＩＮＴＯＮ ＢＯＴ个¹¹ꫂ;ＬＥＬ ＯＰ;https://imgur.com/a/CCeVNvV.jpeg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
-    MODE: process.env.MODE || 'private',
+    MODE: process.env.MODE || 'public',
     WARN: process.env.WARN || '3',
     ANTILINK_WARN: process.env.ANTILINK_WARN || '',
     HEROKU: {
